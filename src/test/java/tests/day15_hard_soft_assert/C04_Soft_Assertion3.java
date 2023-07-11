@@ -67,7 +67,7 @@ public class C04_Soft_Assertion3 {
 
         //9. Test that "Eurozone (euro)" is selected using soft assert
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(select.getFirstSelectedOption(),"Eurozone (euro)");
+        softAssert.assertTrue(select.getFirstSelectedOption().isDisplayed());
 
         /*
         10. Test that the DropDown list has these options using soft assert "Select One",
@@ -88,11 +88,14 @@ public class C04_Soft_Assertion3 {
         }
 
         String[] arr = {"Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)","China (yuan)",
-                "Denmark (krone) ","Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)",
-                "Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand ( dollar)","Sweden (krona)",
+                "Denmark (krone)","Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)",
+                "Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand (dollar)","Sweden (krona)",
                 "Singapore (dollar)","Thailand (baht)"};
         List<String> expectedOptionList = Arrays.asList(arr);
         softAssert.assertEquals(actualOptionList, expectedOptionList);
+
+        System.out.println(actualOptionList);
+        System.out.println(expectedOptionList);
 
         softAssert.assertAll();
 

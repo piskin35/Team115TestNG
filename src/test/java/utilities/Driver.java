@@ -18,19 +18,21 @@ public class Driver {
         return driver;
     }
 
-    //to close opened driver
-
+    // to close opened driver // if a driver is opened, this method will close it. If there is no drider, it wont do anything
     public static void closeDriver(){
-        if(driver!=null){
+        if (driver!=null) {
             driver.close();
             driver=null;
         }
+
     }
 
     public static void quitDriver(){
-        if(driver!=null){
+
+        if (driver!=null) {
             driver.quit();
             driver=null;
         }
+
     }
 }
