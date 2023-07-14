@@ -11,6 +11,9 @@ import java.time.Duration;
 
 public class Driver {
 
+    private Driver(){};  //Singleton pattern We use it to reach getDriver() method, so we swon't create any object from this class
+    //to prevent others creating new object from this class
+
     static WebDriver driver;
 
 //    public static WebDriver getDriver(){

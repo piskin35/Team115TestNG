@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Running Groups" verbose="10">
+    
+    <test name="We will run groups">
+        <groups>
+            <run>
+                <include name="reg1"></include>
+                <include name="reg2"></include>
+                <exclude name="smoke1"></exclude>
+            </run>
+        </groups>
+        
+        <packages>
+            <package name="tests.day14_testng_framework"></package>
+            <package name="tests.day15_hard_soft_assert"></package>
+<!--            <package name="tests.*"></package>    you can use left code * to select all packages          -->
+        </packages>
+        
+    </test>
+    
+</suite>

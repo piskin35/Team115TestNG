@@ -17,7 +17,7 @@ public class C01_PositiveLogInTest {
 
          */
 
-    @Test
+    @Test(groups = "reg1")
     public void test01(){
 
         QualityDemyPage qualityDemyPage = new QualityDemyPage();

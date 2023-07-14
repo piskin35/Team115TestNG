@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.AmazonPage;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class C03_Soft_Assertion2 {
 
@@ -32,7 +33,7 @@ public class C03_Soft_Assertion2 {
         AmazonPage amazonPage = new AmazonPage();
         amazonPage.amazonSearchBox.sendKeys("Nutella"+ Keys.ENTER);
 
-        String expectedResultWord = "nutella";
+        String expectedResultWord = "Nutella";
         String actualResultTest = amazonPage.amazonResultText.getText();
         softAssert.assertTrue(actualResultTest.contains(expectedResultWord));
 

@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class C03_NutellaTest {
 
-    @Test
+    @Test(groups = "reg2")
     public void test01(){
 
         //Driver set up

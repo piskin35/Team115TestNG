@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class C02_DependsOnMethod {
 
-    @Test
+    @Test(groups = "reg1")
     public void firstTest(){
         System.out.println("First test is executed");
     }

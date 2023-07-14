@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Running Classes">
+
+    <test name="We will run classes">
+
+        <classes>
+
+            <class name="tests.day14_testng_framework.C01_Priority"></class>
+            <class name="tests.day15_hard_soft_assert.C03_Soft_Assertion2"></class>
+            <class name="tests.day16_POM_page_Object_model.C02_NegativeLoginTest"></class>
+            <class name="tests.day17_ReusableMethods_And_XmlFiles.C01_SwitchToNewWindow"></class>
+
+        </classes>
+
+    </test>
+
+</suite>

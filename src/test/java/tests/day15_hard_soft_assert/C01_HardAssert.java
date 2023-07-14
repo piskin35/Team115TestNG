@@ -18,7 +18,7 @@ public class C01_HardAssert {
 
      */
 
-    @Test
+    @Test(groups = "reg1")
     public void test01(){
         Assert.assertTrue(10>7);
         System.out.println("after first assert");

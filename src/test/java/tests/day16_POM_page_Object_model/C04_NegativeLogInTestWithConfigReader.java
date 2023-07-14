@@ -10,7 +10,7 @@ public class C04_NegativeLogInTestWithConfigReader {
 
     QualityDemyPage qualityDemyPage;
 
-    @Test(priority = 1)
+    @Test(priority = 1, groups = "reg1")
     public void invalidEmailTest(){
         qualityDemyPage = new QualityDemyPage();
         //1) go to the "https://www.qualitydemy.com/
@@ -28,7 +28,7 @@ public class C04_NegativeLogInTestWithConfigReader {
         Driver.closeDriver();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "reg2")
     public void invalidPasswordTest(){
         qualityDemyPage = new QualityDemyPage();
         //1) go to the "https://www.qualitydemy.com/
@@ -46,7 +46,7 @@ public class C04_NegativeLogInTestWithConfigReader {
         Driver.closeDriver();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, groups = "smoke1")
     public void invalidPasswordInvalidEmailTest(){
         qualityDemyPage = new QualityDemyPage();
         //1) go to the "https://www.qualitydemy.com/

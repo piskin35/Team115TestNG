@@ -31,7 +31,7 @@ public class C04_Soft_Assertion3 {
         "Singapore (dollar)","Thailand (baht)"
          */
 
-    @Test
+    @Test(groups = "reg2")
     public void test01() throws InterruptedException {
         //1. Go to “http://zero.webappsecurity.com/”
         Driver.getDriver().get("http://zero.webappsecurity.com/");
