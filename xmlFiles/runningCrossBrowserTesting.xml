@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CrossBrowserTest" parallel="tests" thread-count="2">
+    <test name="Cross Browser With Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+
+        <classes>
+            <class name="tests.day18_Html_Reports_Parallel_Cross_DataProvider.C04_NutellaCrossTest"></class>
+            <class name="tests.day18_Html_Reports_Parallel_Cross_DataProvider.C05_WiseQuarterCrossTest"></class>
+        </classes>
+    </test>
+
+    <test name="Cross Browser Test With Edge">
+        <parameter name="browser" value="edge"></parameter>
+
+        <classes>
+            <class name="tests.day18_Html_Reports_Parallel_Cross_DataProvider.C04_NutellaCrossTest"></class>
+            <class name="tests.day18_Html_Reports_Parallel_Cross_DataProvider.C05_WiseQuarterCrossTest"></class>
+        </classes>
+    </test>
+
+</suite>

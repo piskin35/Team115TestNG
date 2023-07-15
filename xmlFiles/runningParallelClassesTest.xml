@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Testing" parallel="classes" thread-count="3">
+    <test name="running parallel classes">
+        <classes>
+            <class name="tests.day16_POM_page_Object_model.C01_PositiveLogInTest"></class>
+            <class name="tests.day16_POM_page_Object_model.C02_NegativeLoginTest"></class>
+            <class name="tests.day16_POM_page_Object_model.C03_PositiveLogInTestWithConfigReader"></class>
+            <class name="tests.day16_POM_page_Object_model.C04_NegativeLogInTestWithConfigReader"></class>
+        </classes>
+    </test>
+</suite>
